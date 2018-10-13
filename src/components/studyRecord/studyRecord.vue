@@ -1,7 +1,7 @@
 <template>
   <div>
     <loading v-show="showLoading"></loading>
-    <div v-show="!showLoading">
+    <div v-show="!showLoading" style="margin-bottom:60px;">
       <a href="javascript:void(0)" class="records border-1px" v-for="item in studyRecord">
         <h3 class="record-course">{{item.libraryName}}</h3>
         <p class="grade"><span>分数：{{item.score}}分</span><span>用时：{{item.consumedTime}}秒</span><span>排名：第{{item.rankNo}}名</span></p>
